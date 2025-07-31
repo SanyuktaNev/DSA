@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build cpp",
+        "type": "shell",
+        "command": "D:\\MinGW\\bin\\g++.exe",
+        "args": [
+          "-fdiagnostics-color=always",
+          "-g",
+          "${file}",
+          "-o",
+          "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "detail": "Compile C++ using g++"
+      }
+    ]
+  }
+  
